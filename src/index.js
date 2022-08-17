@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import reportWebVitals from "./reportWebVitals";
-import Calculator from "./views/containers/Kalkulator/Calculator";
+import Calculator from "./Calculator";
 import "./index.scss";
 
 ReactDOM.render(

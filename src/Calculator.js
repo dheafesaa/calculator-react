@@ -1,6 +1,8 @@
+/* eslint-disable */
+
 import React, { useState } from "react";
-import Display from "./Display/Display";
-import KeyPad from "./KeyPad/KeyPad";
+import Display from "./views/containers/Display/Display";
+import KeyPad from "./views/containers/KeyPad/KeyPad";
 
 const Calculator = () => {
   const [calc, setCalc] = useState("");

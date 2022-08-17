@@ -1,5 +1,5 @@
 import React from "react";
-import ButtonKey from "../../../components/Widgets/ButtonKey/ButtonKey";
+import ButtonKey from "../../components/ButtonKey/ButtonKey";
 import "./KeyPad.scss";
 
 const KeyPad = (props) => {
