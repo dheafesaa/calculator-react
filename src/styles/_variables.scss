@@ -1,0 +1,55 @@
+@mixin flex-style($content: center, $direction: column) {
+  display: flex;
+  justify-content: $content;
+  flex-direction: $direction;
+}
+
+@mixin key-btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.4s;
+  color: $white;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+@mixin input-data($width: 100%) {
+  box-sizing: border-box;
+  outline: none;
+  width: $width;
+  padding: 12px 10px;
+  font-size: $font-size - 5px;
+  border: 1px solid map-get($color, "blue");
+  border-radius: $border-radius;
+  &:focus {
+    border-color: map-get($color, "dark-blue");
+  }
+}
+
+$white: #fff;
+$black: #000;
+$misty: #f6f6f6;
+$pink: #d81e5b;
+$dark: #131a26;
+$silver: #888;
+
+$font-size: 20px;
+$border-radius: 5px;
+$padding: 10px 20px;
+$border-bottom: 1px solid #dedede;
+
+$color: (
+  "red": #d86969,
+  "dark-red": #a73737,
+  "blue": #81c4de,
+  "dark-blue": #3788a7,
+  "grey": #d3d3d3,
+  "dark-grey": #a9a9a9,
+  "cherry": #f44336,
+  "light": #ccc,
+  "dark-light": #a9a9a9,
+);
